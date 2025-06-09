@@ -1,0 +1,219 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.sky {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  animation: skyPulse 15s infinite alternate;
+}
+
+@keyframes skyPulse {
+  0% { background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); }
+  50% { background: radial-gradient(ellipse at bottom, #1b2735 0%, #0a1120 100%); }
+  100% { background: radial-gradient(ellipse at bottom, #1b2735 0%, #091a33 100%); }
+}
+
+/* Controle de música */
+.music-control {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0,0,0,0.5);
+  padding: 8px 15px;
+  border-radius: 30px;
+}
+
+#musicToggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+#musicToggle:hover {
+  transform: scale(1.2);
+}
+
+#musicStatus {
+  font-size: 0.9rem;
+}
+
+/* Texto romântico central */
+.center-text {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+/* Estrelas */
+.star {
+  font-size: 22px;
+  color: #fffacd;
+  position: absolute;
+  cursor: pointer;
+  animation: twinkle 2s infinite ease-in-out;
+  transition: transform 0.3s;
+  z-index: 2;
+}
+
+.star:hover {
+  transform: scale(1.4);
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+/* Modal de mensagem */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+
+.modal-content {
+  background: white;
+  border-radius: 15px;
+  max-width: 700px; /* Aumentado de 500px */
+  width: 90%;
+  padding: 30px; /* Aumentado de 20px */
+  text-align: center;
+  position: relative;
+  animation: scaleUp 0.4s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-content p {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Botão de fechar */
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #ff6b6b;
+}
+
+/* Carrossel */
+.carousel-container {
+  width: 100%;
+  height: 400px; /* Aumentado de 250px */
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-container img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Alterado de 'cover' para 'contain' */
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  border-radius: 10px;
+  margin: auto; /* Centraliza a imagem */
+}
+
+.carousel-container img.active {
+  opacity: 1;
+}
+
+.carousel-nav {
+  display: none;
+}
+
+.carousel-prev, .carousel-next {
+  background: rgba(255,255,255,0.5);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #333;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+  background: rgba(255,255,255,0.8);
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  z-index: 2;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.carousel-dot.active {
+  background: white;
+  transform: scale(1);
+}

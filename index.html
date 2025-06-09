@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Céu das Nossas Memórias</title>
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a8efcc8e76.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <audio id="backgroundMusic" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+  <div class="music-control">
+    <button id="musicToggle"><i class="fas fa-music"></i></button>
+    <span id="musicStatus">Música: Ligada</span>
+  </div>
+
+  <div class="sky">
+    <div class="stars-container"></div>
+    <div class="center-text">
+      <h1>Cada estrela guarda uma memória nossa...<br>Clique e descubra 💖</h1>
+    </div>
+
+    <!-- Modal de mensagem -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <div class="carousel-container" id="carouselContainer">
+            <div class="carousel-dots"></div>
+        </div>
+        <p id="modalMessage"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
