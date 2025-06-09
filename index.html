@@ -9,16 +9,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a8efcc8e76.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css?v=3"/>
 </head>
 <body>
-  <audio id="backgroundMusic" loop>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-    Seu navegador não suporta o elemento de áudio.
-  </audio>
   <div class="music-control">
     <button id="musicToggle"><i class="fas fa-music"></i></button>
-    <span id="musicStatus">Música: Ligada</span>
+    <span id="musicStatus">Música: Desligada</span>
   </div>
 
   <div class="sky">
@@ -26,19 +22,18 @@
     <div class="center-text">
       <h1>Cada estrela guarda uma memória nossa...<br>Clique e descubra 💖</h1>
     </div>
-
-    <!-- Modal de mensagem -->
     <div class="modal" id="modal">
       <div class="modal-content">
         <span class="close-btn" id="closeBtn">&times;</span>
         <div class="carousel-container" id="carouselContainer">
-            <div class="carousel-dots"></div>
+          <div class="carousel-dots"></div>
         </div>
         <p id="modalMessage"></p>
       </div>
     </div>
   </div>
-
-  <script src="script.js"></script>
+  <div id="youtube-player"></div>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
