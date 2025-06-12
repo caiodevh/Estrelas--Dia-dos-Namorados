@@ -122,7 +122,7 @@ const memories = [
     feeling: "E pensar que um role de amigos na granito, com conversas sobre IST's se transformaria em uma história de amor!"
   },
   {
-    message: "",
+    message: "Meu amor...",
     images: [
       "src/img/rolezinhos/role noturno.jpeg",
       "src/img/rolezinhos/WhatsApp Image 2025-06-12 at 09.49.45 (1).jpeg",
@@ -171,7 +171,7 @@ function openModal(memoryIndex) {
   modal.style.display = 'flex';
   modalMessage.innerHTML = `
     <strong>${memory.date}</strong><br>
-    ${memory.message}<br><br>
+    <h1>${memory.message}</h1><br><br>
     <em>${memory.feeling}</em>
   `;
   carouselContainer.querySelectorAll('img').forEach(img => img.remove());
