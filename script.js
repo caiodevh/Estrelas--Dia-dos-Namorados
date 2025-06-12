@@ -1,34 +1,135 @@
 // Dados das memórias - cada objeto representa uma estrela/memória
 const memories = [
   {
-    message: "Nosso dia no parque foi inesquecível 💚",
+    message: "Nossa primeira festa de familia como casal💜",
     images: [
-      "https://images.pexels.com/photos/1024984/pexels-photo-1024984.jpeg",
-      "https://images.pexels.com/photos/792777/pexels-photo-792777.jpeg",
-      "https://images.pexels.com/photos/1128318/pexels-photo-1128318.jpeg"
+      "src/img/15 anos/15 anos.jpeg",
+      "src/img/15 anos/WhatsApp Image 2025-06-12 at 09.49.40 (1).jpeg",
+      "src/img/15 anos/WhatsApp Image 2025-06-12 at 09.49.40.jpeg"
     ],
-    date: "15 de Maio, 2023",
-    feeling: "Foi um dia mágico, cheio de risadas e momentos especiais. Me senti a pessoa mais feliz do mundo!"
+    date: "",
+    feeling: "Você estava tão linda nesse dia, eu não conseguia tirar os olhos de você!"
   },
   {
-    message: "Nosso jantar à luz de velas 🌹",
+    message: "Minha Deusa da Arte🎨",
     images: [
-      "https://images.pexels.com/photos/12510622/pexels-photo-12510622.png",
-      "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg",
-      "https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg"
+      "src/img/deusa da arte/deusa da arte.jpeg",
+      "src/img/deusa da arte/WhatsApp Image 2025-06-12 at 09.49.43 (1).jpeg",
+      "src/img/deusa da arte/WhatsApp Image 2025-06-12 at 09.49.44.jpeg"
     ],
-    date: "20 de Junho, 2023",
-    feeling: "A atmosfera era perfeita, e cada minuto ao seu lado me fez sentir especial e amada."
+    date: "",
+    feeling: "Foi com você que eu aprendi que arte pode ter movimento, paixão, sedução e um lindo sorriso!"
   },
   {
-    message: "Aquela viagem inesquecível ✈️",
+    message: "É assim que eu te vejo 🌠",
     images: [
-      "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
-      "https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg"
+      "src/img/estrelas/estrelas.jpeg",
+      "src/img/estrelas/WhatsApp Image 2025-06-12 at 09.49.44 (3).jpeg",
+      "src/img/estrelas/WhatsApp Image 2025-06-12 at 09.49.45.jpeg"
     ],
-    date: "10 de Agosto, 2023",
-    feeling: "Explorar novos lugares com você foi a melhor experiência da minha vida. Cada momento foi uma aventura!"
+    date: "",
+    feeling: "Quando eu olho pra você eu vejo estrelas, vejo galáxias, vejo um brilho tão lindo que me hipnotiza! "
+  },
+  {
+    message: "Eu amo sair com você 🧑‍🤝‍🧑",
+    images: [
+      "src/img/festa hafner/festa hafner.jpeg",
+      "src/img/festa hafner/WhatsApp Image 2025-06-12 at 09.49.39 (1).jpeg"
+    ],
+    date: "",
+    feeling: "Eu me sinto o homem mais sortudo do mundo quando seguro suas mãos!"
+  },
+  {
+    message: "Amo nossos lanchinhos 🍔",
+    images: [
+      "src/img/lanchinhos/nossos lanchinhos.jpeg",
+      "src/img/lanchinhos/WhatsApp Image 2025-06-12 at 09.49.44 (1).jpeg",
+      "src/img/lanchinhos/WhatsApp Image 2025-06-12 at 09.49.44 (2).jpeg"
+    ],
+    date: "",
+    feeling: "Quando nos saimos pra comer e eu vejo você toda felizinha, isso deixa meu coração quente!"
+  },
+  {
+    message: "Você é a Deusa que eu cultuo 🛐",
+    images: [
+      "src/img/minha deusa/WhatsApp Image 2025-06-12 at 09.49.41 (1).jpeg",
+      "src/img/minha deusa/WhatsApp Image 2025-06-12 at 09.49.41 (3).jpeg"
+    ],
+    date: "",
+    feeling: "Você é a minha divindade, aquela que eu quero adorar, amar e ser devoto!"
+  },
+  {
+    message: "A verdadeira obra de arte, é você 🖼️",
+    images: [
+      "src/img/museu 1/ida ao museu.jpeg",
+      "src/img/museu 1/WhatsApp Image 2025-06-12 at 09.49.42 (2).jpeg",
+      "src/img/museu 1/WhatsApp Image 2025-06-12 at 09.49.42 (3).jpeg"
+    ],
+    date: "",
+    feeling: "Todas as vezes que vamos ao museus nenhuma obra me impressiona, pois tenho a mais bela de todas comigo! "
+  },
+  {
+    message: "Você é música e poesia 📜",
+    images: [
+      "src/img/museu 2/ida ao museus2.jpeg",
+      "src/img/museu 2/WhatsApp Image 2025-06-12 at 09.49.43 (2).jpeg",
+      "src/img/museu 2/WhatsApp Image 2025-06-12 at 09.49.43 (3).jpeg",
+      "src/img/museu 2/WhatsApp Image 2025-06-12 at 09.49.43.jpeg"
+    ],
+    date: "",
+    feeling: "Se a música ganhasse forma e poesia ganhasse movimento o resultado seria você! "
+  },
+  {
+    message: "Gravar esses momentos com você é algo precisos para mim 📸",
+    images: [
+      "src/img/nos/primeira festa a fantasia.jpeg",
+      "src/img/nos/WhatsApp Image 2025-06-12 at 09.49.41 (2).jpeg",
+      "src/img/nos/WhatsApp Image 2025-06-12 at 09.49.41.jpeg"
+    ],
+    date: "",
+    feeling: "Cada foto que tiro com você é uma prova de que não estou delirando. As vezes acho que vocÊ é tão perfeita que só pode ser uma alucinação!"
+  },
+  {
+    message: "Nossas noites juntos são as melhores 🌙",
+    images: [
+      "src/img/nossas noites/nossas noites.jpeg",
+      "src/img/nossas noites/WhatsApp Image 2025-06-12 at 09.49.45 (3).jpeg",
+      "src/img/nossas noites/WhatsApp Image 2025-06-12 at 09.49.46.jpeg"
+    ],
+    date: "",
+    feeling: "As noites com vocÊ sempre foram especiais pra mim!"
+  },
+  {
+    message: "Pra mim nosso lugar especial é a praia 🏖️",
+    images: [
+      "src/img/praia/nossas idas a praia.jpeg",
+      "src/img/praia/WhatsApp Image 2025-06-12 at 09.49.42 (1).jpeg",
+      "src/img/praia/WhatsApp Image 2025-06-12 at 09.49.42.jpeg",
+      "src/img/praia/praia 2.jpeg",
+      "src/img/praia/WhatsApp Image 2025-06-12 at 09.49.39.jpeg"
+    ],
+    date: "",
+    feeling: "O soM do mar, o toque da areia e a visão do sol no seu corpo é o conjunto mais lindo que ja vi"
+  },
+  {
+    message: "O começo de Nós 💏",
+    images: [
+      "src/img/primeira fotos/primeira foto.jpeg",
+      "src/img/primeira fotos/WhatsApp Image 2025-06-12 at 09.49.46 (1).jpeg",
+      "src/img/primeira fotos/WhatsApp Image 2025-06-12 at 09.49.46 (2).jpeg"
+    ],
+    date: "",
+    feeling: "E pensar que um role de amigos na granito, com conversas sobre IST's se transformaria em uma história de amor!"
+  },
+  {
+    message: "",
+    images: [
+      "src/img/rolezinhos/role noturno.jpeg",
+      "src/img/rolezinhos/WhatsApp Image 2025-06-12 at 09.49.45 (1).jpeg",
+      "src/img/rolezinhos/WhatsApp Image 2025-06-12 at 09.49.45 (2).jpeg"
+    ],
+    date: "",
+    feeling: "Feliz Dia dos Namorados, meu amor. Hoje, mais do que nunca, eu queria estar ao seu lado. Queria poder olhar nos seus olhos e dizer o quanto você é incrível, forte, linda, inteligente, com um coração que sempre me inspirou a ser melhor. Eu sei que errei... sei que causei mágoas e, por isso, te peço desculpas do fundo da alma. Nunca foi por falta de amor — porque te amei em cada momento, e continuo amando. Você é a luz que iluminou meus dias mais escuros, a paz no meu caos, o Big Bang que criou amor no meu coração. Mesmo com tudo, mesmo com o fim… a verdade é que não existe nada que eu queira mais do que voltar a ser teu. Voltar a te chamar de minha. Voltar a fazer planos contigo e sentir teu sorriso curando qualquer tristeza. Se ainda houver um pedacinho de espaço pra mim no teu coração, saiba que o meu continua inteiro teu. EU TE AMO"
   }
 ];
 
@@ -100,7 +201,7 @@ function openModal(memoryIndex) {
 
 function startCarousel() {
   if (carouselImages.length <= 1) return;
-  intervalId = setInterval(showNextImage, 3000);
+  intervalId = setInterval(showNextImage, 2000);
 }
 
 function showNextImage() {
